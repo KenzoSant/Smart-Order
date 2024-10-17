@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Restaurant</title>
+</head>
+
+<body>
+
+    <!-- ==== HEADER ==== -->
+    <header>
+        <a href="#" class="logo"> <span></span></a>
+        <div class="menuToggle" onclick="toggleMenu()">
+            <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </div>
+        <ul class="navigation">
+            <li> <a href="#banner" onclick="toggleMenu()">Home</a> </li>
+            <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
+            <li> <a href="#menu" onclick="toggleMenu()">Menu</a> </li>
+            <li> <a href="#expert" onclick="toggleMenu()">Expert</a> </li>
+            <li> <a href="#opinions" onclick="toggleMenu()">Opinions</a> </li>
+            <li> <a href="#contact" onclick="toggleMenu()">Contact</a> </li>
+        </ul>
+    </header>
+
+    <!-- ==== SECTION BANNER ==== -->
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Restaurant</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique enim consequuntur ducimus dolores,
+                minima laboriosam earum repellendus dignissimos voluptatum incidunt saepe iste quas odit ipsa ipsum
+                cumque harum! Voluptatibus, ad.</p>
+            <a href="#" class="btn">Menu</a>
+        </div>
+    </section>
+
+    <!-- ==== SECTION OPINIONS ==== -->
+    <section class="opinions" id="opinions">
+        <div class="title white">
+            <h1 class="titleTxt">They <span>S</span>aid About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- ==== SECTION ABOUT ==== -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50 txt-about">
+                <h2 class="titleTxt"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+            </div>
+
+            <div class="col50">
+                <div class="imgBox">
+                    <img src="./assets/img/img1-1.jpg" alt="Imagem sobre nós">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==== SECTION CARDÁPIO ==== -->
+    <section class="cardapio-section" id="cardapio">
+        <div class="cardapio" id="entradas">
+            <h3>Entradas</h3>
+            <ul>
+                <li>Sopa Tailandesa</li>
+                <li>Spring Rolls</li>
+                <li>Salada de Papaya</li>
+            </ul>
+        </div>
+
+        <div class="cardapio" id="bebidas">
+            <h3>Bebidas</h3>
+            <ul>
+                <li>Suco de Manga</li>
+                <li>Chá de Jasmim</li>
+                <li>Cerveja Tailandesa</li>
+            </ul>
+        </div>
+
+        <div class="cardapio" id="pratos-principais">
+            <h3>Pratos Principais</h3>
+            <ul>
+                <li>Pad Thai</li>
+                <li>Curry Verde</li>
+                <li>Arroz Frito com Abacaxi</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+
+</html>
