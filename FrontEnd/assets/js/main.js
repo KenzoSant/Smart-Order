@@ -1,13 +1,13 @@
-document.addEventListener('scroll', function () {
-    const aboutSection = document.getElementById('about');
-    const cardapioSection = document.getElementById('cardapio');
+/* ==== HEADER ==== */
 
-    const aboutRect = aboutSection.getBoundingClientRect();
+window.addEventListener('scroll', function(){
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
 
-    // Verifica se a parte inferior da seção About está visível na tela
-    if (aboutRect.bottom <= window.innerHeight) {
-        cardapioSection.classList.add('visible');
-    } else {
-        cardapioSection.classList.remove('visible');
-    }
-});
+function toggleMenu(){
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
